@@ -16,113 +16,113 @@ export const technologies = [
   {
     title: 'HTML',
     icon: faHtml5,
-    url: '',
+    url: 'https://en.wikipedia.org/wiki/HTML',
   },
   {
     title: 'CSS',
     icon: faCss3,
-    url: '',
+    url: 'https://www.w3schools.com/css/css_intro.asp',
   },
   {
     title: 'SASS',
     icon: faSass,
-    url: '',
+    url: 'https://sass-lang.com/',
   },
   {
     title: 'Tailwind CSS',
     icon: faCss3,
-    url: '',
+    url: 'https://tailwindcss.com/',
   },
   {
     title: 'Bootstrap',
     icon: faBootstrap,
-    url: '',
+    url: 'https://getbootstrap.com/',
   },
   {
     title: 'JS',
     icon: faJsSquare,
-    url: '',
+    url: 'https://www.w3schools.com/whatis/whatis_js.asp',
   },
   {
     title: 'TS',
     icon: faJsSquare,
-    url: '',
+    url: 'https://www.typescriptlang.org/',
   },
   {
     title: 'React',
     icon: faReact,
-    url: '',
+    url: 'https://reactjs.org/docs/getting-started.html',
   },
   {
     title: 'React Native',
     icon: faReact,
-    url: '',
+    url: 'https://reactnative.dev/',
   },
   {
     title: 'Next JS',
     icon: faReact,
-    url: '',
+    url: 'https://nextjs.org/',
   },
   {
     title: 'Node JS',
     icon: faNodeJs,
-    url: '',
+    url: 'https://nodejs.org/en/',
   },
   {
     title: 'MongoDB',
     icon: faCloud,
-    url: '',
+    url: 'https://www.mongodb.com/',
   },
   {
     title: 'Firebase',
     icon: faFire,
-    url: '',
+    url: 'https://firebase.google.com/',
   },
   {
     title: 'PostgreSQL',
     icon: faDatabase,
-    url: '',
+    url: 'https://www.postgresql.org/',
   },
   {
     title: 'PHP',
     icon: faPhp,
-    url: '',
+    url: 'https://www.php.net/',
   },
   {
     title: 'Symfony',
     icon: faPhp,
-    url: '',
+    url: 'https://symfony.com/',
   },
 ];
 
 export const extras = [
   {
     title: 'Redux',
-    url: '',
+    url: 'https://redux.js.org/',
   },
   {
     title: 'Angular / Angular JS',
-    url: '',
+    url: 'https://angular.io/',
   },
   {
     title: 'Express JS',
-    url: '',
+    url: 'http://expressjs.com/',
   },
   {
     title: 'Mongoose',
-    url: '',
+    url: 'https://mongoosejs.com/',
   },
   {
     title: 'JWT',
-    url: '',
+    url: 'https://jwt.io/',
   },
   {
     title: 'Heroku',
-    url: '',
+    url: 'https://id.heroku.com/login',
   },
   {
     title: 'Figma',
-    url: '',
+    url: 'https://www.figma.com/files/recent?fuid=957085985568642901',
   },
 ];
 
@@ -143,12 +143,12 @@ export const contacts = [
   {
     title: 'Email',
     icon: faEnvelope,
-    url: '',
+    url: 'mailto:andrelizaran2000@gmail.com',
   },
   {
     title: 'Linkedin',
     icon: faLinkedin,
-    url: '',
+    url: 'https://www.linkedin.com/in/jes%C3%BAs-andr%C3%A9-lizar%C3%A1n-blanco-7342681ab/',
   },
 ];
 

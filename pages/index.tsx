@@ -1,5 +1,8 @@
-// Classes
+// Modules
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// Classes
 import { borderWhiteButton, whiteButton } from '../classes';
 
 // Components
@@ -110,14 +113,13 @@ function Technologies() {
         Technologies
       </h1>
       <div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
-        {technologies.map(({ title, icon }) => (
-          <div
-            className='rounded text-white flex flex-col bg-gray-700 hover:bg-gray-600 items-center py-4 px-6 cursor-pointer justify-center'
-            key={title}
-          >
-            <FontAwesomeIcon icon={icon} className='text-5xl mb-1' />
-            <h3 className='font-semibold text-md text-center'>{title}</h3>
-          </div>
+        {technologies.map(({ title, icon, url }) => (
+          <Link key={title} href={url}>
+            <div className='rounded text-white flex flex-col bg-gray-700 hover:bg-gray-600 items-center py-4 px-6 cursor-pointer justify-center'>
+              <FontAwesomeIcon icon={icon} className='text-5xl mb-1' />
+              <h3 className='font-semibold text-md text-center'>{title}</h3>
+            </div>
+          </Link>
         ))}
       </div>
     </section>
@@ -129,13 +131,12 @@ function Extras() {
     <section className='mt-6'>
       <h1 className='text-xl text-gray-300 mb-3'>Extras</h1>
       <div className='flex flex-wrap gap-4'>
-        {extras.map((extra) => (
-          <div
-            key={extra.title}
-            className='py-2 px-4 bg-white rounded text-neutral-800 font-semibold cursor-pointer hover:bg-gray-200'
-          >
-            {extra.title}
-          </div>
+        {extras.map(({ title, url }) => (
+          <Link key={title} href={url}>
+            <div className='py-2 px-4 bg-white rounded text-neutral-800 font-semibold cursor-pointer hover:bg-gray-200'>
+              {title}
+            </div>
+          </Link>
         ))}
       </div>
     </section>
@@ -150,15 +151,14 @@ function Experience() {
       </h1>
       <div className='flex flex-col sm:grid grid-cols-2 md:grid-cols-3 gap-4'>
         {experiences.map(({ title, description, initialDate, finishDate }) => (
-          <div
-            className='flex flex-col rounded text-white text-center py-4 px-6 border-2 border-white cursor-pointer'
-            key={title}
-          >
-            <h2 className='text-md font-semibold'>{title}</h2>
-            <p>{description}</p>
-            <small className='text-gray-400'>
-              {initialDate} - {finishDate}
-            </small>
+          <div key={title}>
+            <div className='flex flex-col rounded text-white text-center py-4 px-6 border-2 border-white cursor-pointer'>
+              <h2 className='text-md font-semibold'>{title}</h2>
+              <p>{description}</p>
+              <small className='text-gray-400'>
+                {initialDate} - {finishDate}
+              </small>
+            </div>
           </div>
         ))}
       </div>
@@ -173,14 +173,13 @@ function ContactMe() {
         Contact Me
       </h1>
       <div className='flex flex-col sm:grid grid-cols-2 md:grid-cols-3 gap-4'>
-        {contacts.map(({ title, icon }) => (
-          <div
-            className='flex flex-col rounded bg-white text-center items-center cursor-pointer py-4 px-6 text-neutral-800 hover:bg-gray-200'
-            key={title}
-          >
-            <FontAwesomeIcon icon={icon} className='text-5xl mb-1' />
-            <h2 className='text-md font-semibold'>{title}</h2>
-          </div>
+        {contacts.map(({ title, icon, url }) => (
+          <Link href={url} key={title}>
+            <div className='flex flex-col rounded bg-white text-center items-center cursor-pointer py-4 px-6 text-neutral-800 hover:bg-gray-200'>
+              <FontAwesomeIcon icon={icon} className='text-5xl mb-1' />
+              <h2 className='text-md font-semibold'>{title}</h2>
+            </div>
+          </Link>
         ))}
       </div>
     </section>
