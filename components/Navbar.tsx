@@ -1,14 +1,17 @@
 // Modules
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 // Classes
 import { navButton, whiteButton } from '../classes';
 
 export default function Navbar() {
+  const router = useRouter();
+
   return (
     <nav className='flex justify-between items-center px-6 md:px-20 py-4 text-white w-full fixed top-0 bg-neutral-800'>
       <NavTitle />
-      <NavList />
+      {router.pathname === '/' && <NavList />}
     </nav>
   );
 }

@@ -144,9 +144,7 @@ function Technologies() {
 function Extras() {
   return (
     <section className='mt-6'>
-      <h1 className='text-xl mb-1 text-gray-300' mb-3>
-        Extras
-      </h1>
+      <h1 className='text-xl mb-3 text-gray-300'>Extras</h1>
       <div className='flex flex-wrap gap-4'>
         {extras.map(({ title, url }) => (
           <Link key={title} href={url}>
