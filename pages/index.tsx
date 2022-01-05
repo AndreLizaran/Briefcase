@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Classes
-import { borderWhiteButton } from '../classes';
+import { borderWhiteButton, sectionTitle } from '../classes';
 
 // Components
 import Container from '../components/Container';
@@ -18,6 +18,7 @@ import {
   experiences,
   contacts,
   extras,
+  projects,
 } from '../utils/information';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -35,6 +36,7 @@ export default function index() {
         <Technologies />
       </div>
       <Extras />
+      <Projects />
       <Experience />
       <ContactMe />
       <div className='flex w-full justify-center'>
@@ -52,7 +54,7 @@ export default function index() {
 function AboutMe() {
   return (
     <section>
-      <h1 className='text-xl mb-1 text-gray-300' id='about-me-title'>
+      <h1 className={sectionTitle} id='about-me-title'>
         About Me
       </h1>
       <p className='text-white'>{aboutMe.description}</p>
@@ -63,7 +65,7 @@ function AboutMe() {
 function Hobbies() {
   return (
     <section>
-      <h1 className='text-xl mb-1 text-gray-300'>Hobbies</h1>
+      <h1 className={sectionTitle}>Hobbies</h1>
       <ul className='text-white list-disc pl-6'>
         {hobbies.map((hobby) => (
           <li key={hobby}>{hobby}</li>
@@ -76,7 +78,7 @@ function Hobbies() {
 function Languages() {
   return (
     <section>
-      <h1 className='text-xl mb-1 text-gray-300'>Languages</h1>
+      <h1 className={sectionTitle}>Languages</h1>
       <ul className='text-white list-disc pl-6'>
         {languages.map((language) => (
           <li key={language}>{language}</li>
@@ -89,7 +91,7 @@ function Languages() {
 function Schooling() {
   return (
     <section>
-      <h1 className='text-xl mb-1 text-gray-300'>Schooling</h1>
+      <h1 className={sectionTitle}>Schooling</h1>
       <ul className='pl-6'>
         {grades.map(({ title, description, initialDate, finishDate }) => (
           <div className='flex flex-col' key={title}>
@@ -106,7 +108,7 @@ function Schooling() {
 function CV() {
   return (
     <section>
-      <h1 className='text-xl mb-3 text-gray-300'>CV</h1>
+      <h1 className={sectionTitle}>CV</h1>
       <div className='flex gap-4'>
         <Link href='/cv/CV2.pdf'>
           <button className={borderWhiteButton}>View</button>
@@ -120,7 +122,7 @@ function Technologies() {
   return (
     <section>
       <h1
-        className={`text-xl text-gray-300 md:text-right mb-3`}
+        className={`${sectionTitle} md:text-right mb-3`}
         id='technologies-title'
       >
         Technologies
@@ -142,7 +144,7 @@ function Technologies() {
 function Extras() {
   return (
     <section className='mt-6'>
-      <h1 className='text-xl text-gray-300 mb-3'>Extras</h1>
+      <h1 className={`${sectionTitle} mb-3`}>Extras</h1>
       <div className='flex flex-wrap gap-4'>
         {extras.map(({ title, url }) => (
           <Link key={title} href={url}>
@@ -156,10 +158,36 @@ function Extras() {
   );
 }
 
+function Projects() {
+  return (
+    <section className='mt-6'>
+      <h1 className={`${sectionTitle} mb-3`} id='projects-title'>
+        Projects
+      </h1>
+      <div className='flex flex-col sm:grid grid-cols-2 xl:grid-cols-3 gap-4'>
+        {projects.map(({ icon, title, description }) => (
+          <div
+            className='rounded border-2 border-white flex flex-col bg-netral-800'
+            key={title}
+          >
+            <div className='py-6 flex justify-center'>
+              <FontAwesomeIcon icon={icon} size='3x' className='text-white' />
+            </div>
+            <div className='py-4 px-6 bg-white flex flex-col text-center'>
+              <h3 className='font-semibold'>{title}</h3>
+              <small className='text-neutral-800'>{description}</small>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function Experience() {
   return (
     <section className='mt-6'>
-      <h1 className='text-xl text-gray-300 mb-3' id='experience-title'>
+      <h1 className={`${sectionTitle} mb-3`} id='experience-title'>
         Experience
       </h1>
       <div className='flex flex-col sm:grid grid-cols-2 xl:grid-cols-3 gap-4'>
@@ -194,7 +222,7 @@ function Experience() {
 function ContactMe() {
   return (
     <section className='mt-6'>
-      <h1 className='text-xl text-gray-300 mb-3' id='contact-me-title'>
+      <h1 className={`${sectionTitle} mb-3`} id='contact-me-title'>
         Contact Me
       </h1>
       <div className='flex flex-col sm:grid grid-cols-2 md:grid-cols-3 gap-4'>

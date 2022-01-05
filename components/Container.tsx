@@ -4,9 +4,6 @@ import React, { ReactNode } from 'react';
 // Components
 import Navbar from './Navbar';
 
-// Classes
-import { container } from '../classes/index';
-
 type ContainerProps = {
   children: ReactNode;
 };

@@ -1,3 +1,6 @@
+// Modules
+import Link from 'next/link';
+
 // Classes
 import { navButton, whiteButton } from '../classes';
 
@@ -11,7 +14,13 @@ export default function Navbar() {
 }
 
 function NavTitle() {
-  return <h1 className='flex text-2xl tracking-wider font-semibold'>AL</h1>;
+  return (
+    <Link href='/'>
+      <h1 className='flex text-2xl tracking-wider font-semibold cursor-pointer'>
+        AL
+      </h1>
+    </Link>
+  );
 }
 
 const navSections = [

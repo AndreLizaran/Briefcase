@@ -3,6 +3,14 @@ import {
   faFire,
   faEnvelope,
   faDatabase,
+  faVirus,
+  faUsers,
+  faVoicemail,
+  faBox,
+  faCamera,
+  faBoxes,
+  faCar,
+  faHome,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -15,6 +23,7 @@ import {
   faNodeJs,
   faPhp,
   faLinkedin,
+  faPage4,
 } from '@fortawesome/free-brands-svg-icons';
 
 export const technologies = [
@@ -151,6 +160,11 @@ export const contacts = [
     icon: faLinkedin,
     url: 'https://www.linkedin.com/in/jes%C3%BAs-andr%C3%A9-lizar%C3%A1n-blanco-7342681ab/',
   },
+  {
+    title: 'Whatsapp',
+    icon: faVoicemail,
+    url: 'https://www.linkedin.com/in/jes%C3%BAs-andr%C3%A9-lizar%C3%A1n-blanco-7342681ab/',
+  },
 ];
 
 export const experiences = [
@@ -211,4 +225,62 @@ export const hobbies = [
   'Programming',
   'Hanging out with friends',
   'Music',
+];
+
+export const projects = [
+  {
+    title: 'Pandemia Tips',
+    description:
+      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
+    images: [''],
+    technologies: [
+      'React',
+      'Tailwind CSS',
+      'Axios',
+      'Node JS',
+      'Express JS',
+      'JWT',
+    ],
+    icon: faVirus,
+  },
+  {
+    title: 'CIS Platform',
+    description:
+      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
+    images: [''],
+    technologies: ['Next JS', 'Tailwind CSS', 'Axios'],
+    icon: faUsers,
+  },
+  {
+    title: 'Raypal Test',
+    description:
+      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
+    images: [''],
+    technologies: ['Next JS', 'Tailwind CSS', 'Axios'],
+    icon: faBoxes,
+  },
+  {
+    title: 'Delivery Test',
+    description:
+      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
+    images: [''],
+    technologies: ['Next JS', 'Tailwind CSS', 'Axios'],
+    icon: faBox,
+  },
+  {
+    title: 'Blau Web',
+    description:
+      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
+    images: [''],
+    technologies: ['Next JS', 'Tailwind CSS', 'Axios'],
+    icon: faHome,
+  },
+  {
+    title: 'Blau Driver',
+    description:
+      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
+    images: [''],
+    technologies: ['React Native', 'Axios', 'Firebase'],
+    icon: faCar,
+  },
 ];
