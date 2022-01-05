@@ -140,9 +140,9 @@ export const extras = [
 export const aboutMe = {
   name: 'André Lizarán',
   description: `
-  Hi my name is André Lizarán, I'm frontend developer and 21 years old. 
+  Hi my name is André Lizarán, I'm frontend developer and I'm 21 years old. 
   I love developing simple, and useful interfaces. 
-  Mainly I've been working with Typescript and Javascript. I´m from 
+  Mainly I've been working with Typescript and Javascript. I'm from 
   Veracruz, México.`,
 };
 
@@ -155,11 +155,6 @@ export const contacts = [
   {
     title: 'Linkedin',
     icon: faLinkedin,
-    url: 'https://www.linkedin.com/in/jes%C3%BAs-andr%C3%A9-lizar%C3%A1n-blanco-7342681ab/',
-  },
-  {
-    title: 'Whatsapp',
-    icon: faVoicemail,
     url: 'https://www.linkedin.com/in/jes%C3%BAs-andr%C3%A9-lizar%C3%A1n-blanco-7342681ab/',
   },
 ];
@@ -248,22 +243,22 @@ export const projects = [
     technologies: ['Next JS', 'Tailwind CSS', 'Axios'],
     icon: faUsers,
   },
-  {
-    title: 'Blau Web',
-    description:
-      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
-    images: [''],
-    technologies: ['Next JS', 'Tailwind CSS', 'Axios'],
-    icon: faHome,
-  },
-  {
-    title: 'Blau Driver',
-    description:
-      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
-    images: [''],
-    technologies: ['React Native', 'Axios', 'Firebase'],
-    icon: faBus,
-  },
+  // {
+  //   title: 'Blau Web',
+  //   description:
+  //     'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
+  //   images: [''],
+  //   technologies: ['Next JS', 'Tailwind CSS', 'Axios'],
+  //   icon: faHome,
+  // },
+  // {
+  //   title: 'Blau Driver',
+  //   description:
+  //     'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
+  //   images: [''],
+  //   technologies: ['React Native', 'Axios', 'Firebase'],
+  //   icon: faBus,
+  // },
   {
     title: 'React Native Crypto',
     description:
