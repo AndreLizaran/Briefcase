@@ -243,22 +243,6 @@ export const projects = [
     technologies: ['Next JS', 'Tailwind CSS', 'Axios'],
     icon: faUsers,
   },
-  // {
-  //   title: 'Blau Web',
-  //   description:
-  //     'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
-  //   images: [''],
-  //   technologies: ['Next JS', 'Tailwind CSS', 'Axios'],
-  //   icon: faHome,
-  // },
-  // {
-  //   title: 'Blau Driver',
-  //   description:
-  //     'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
-  //   images: [''],
-  //   technologies: ['React Native', 'Axios', 'Firebase'],
-  //   icon: faBus,
-  // },
   {
     title: 'React Native Crypto',
     description:

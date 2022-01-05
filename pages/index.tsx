@@ -36,7 +36,6 @@ export default function index() {
         <Technologies />
       </div>
       <Extras />
-      <Projects />
       <Experience />
       <ContactMe />
       <div className='flex w-full justify-center'>
