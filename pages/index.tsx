@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Classes
-import { borderWhiteButton, whiteButton } from '../classes';
+import { borderWhiteButton } from '../classes';
 
 // Components
 import Container from '../components/Container';
@@ -19,11 +19,12 @@ import {
   contacts,
   extras,
 } from '../utils/information';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 export default function index() {
   return (
     <Container>
-      <div className='flex flex-col md:grid grid-cols-2 gap-20'>
+      <div className='flex flex-col md:grid grid-cols-2 gap-6 md:gap-20'>
         <div className='flex flex-col gap-6'>
           <AboutMe />
           <Hobbies />
@@ -36,6 +37,14 @@ export default function index() {
       <Extras />
       <Experience />
       <ContactMe />
+      <div className='flex w-full justify-center'>
+        <button
+          className='px-6 py-4 mt-10 rounded-2xl bg-gray-700 hover:bg-gray-600 text-white'
+          onClick={() => window.scrollTo({ behavior: 'smooth', top: 0 })}
+        >
+          <FontAwesomeIcon icon={faArrowUp} />
+        </button>
+      </div>
     </Container>
   );
 }
@@ -99,8 +108,9 @@ function CV() {
     <section>
       <h1 className='text-xl mb-3 text-gray-300'>CV</h1>
       <div className='flex gap-4'>
-        <button className={whiteButton}>View</button>
-        <button className={borderWhiteButton}>Download</button>
+        <Link href='/cv/CV2.pdf'>
+          <button className={borderWhiteButton}>View</button>
+        </Link>
       </div>
     </section>
   );
@@ -109,10 +119,13 @@ function CV() {
 function Technologies() {
   return (
     <section>
-      <h1 className={`text-xl text-gray-300 md:text-right mb-3`} id='technologies-title'>
+      <h1
+        className={`text-xl text-gray-300 md:text-right mb-3`}
+        id='technologies-title'
+      >
         Technologies
       </h1>
-      <div className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
+      <div className='grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4'>
         {technologies.map(({ title, icon, url }) => (
           <Link key={title} href={url}>
             <div className='rounded text-white flex flex-col bg-gray-700 hover:bg-gray-600 items-center py-4 px-6 cursor-pointer justify-center'>
@@ -149,18 +162,30 @@ function Experience() {
       <h1 className='text-xl text-gray-300 mb-3' id='experience-title'>
         Experience
       </h1>
-      <div className='flex flex-col sm:grid grid-cols-2 md:grid-cols-3 gap-4'>
-        {experiences.map(({ title, description, initialDate, finishDate }) => (
-          <div key={title}>
-            <div className='flex flex-col rounded text-white text-center py-4 px-6 border-2 border-white cursor-pointer'>
-              <h2 className='text-md font-semibold'>{title}</h2>
-              <p>{description}</p>
-              <small className='text-gray-400'>
-                {initialDate} - {finishDate}
-              </small>
+      <div className='flex flex-col sm:grid grid-cols-2 xl:grid-cols-3 gap-4'>
+        {experiences.map(
+          ({ title, description, initialDate, finishDate, technologies }) => (
+            <div key={title}>
+              <div className='flex flex-col rounded text-white text-center py-4 px-6 border-2 border-white cursor-pointer'>
+                <h2 className='text-md font-semibold'>{title}</h2>
+                <p>{description}</p>
+                <small className='text-gray-400 mb-3'>
+                  {initialDate} - {finishDate}
+                </small>
+                <div className='flex flex-wrap gap-4 justify-center'>
+                  {technologies.map((tech) => (
+                    <div
+                      className='py-2 px-4 bg-white rounded text-neutral-800 font-semibold cursor-pointer hover:bg-gray-200'
+                      key={tech}
+                    >
+                      {tech}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          )
+        )}
       </div>
     </section>
   );

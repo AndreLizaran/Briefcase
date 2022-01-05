@@ -15,7 +15,7 @@ export default function Container({ children }: ContainerProps) {
   return (
     <>
       <Navbar />
-      <div className='p-6 pt-20 w-full'>{children}</div>
+      <div className='px-6 pt-20 pb-10 md:pb-10 md:p-20 w-full'>{children}</div>
     </>
   );
 }

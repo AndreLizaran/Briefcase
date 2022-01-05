@@ -1,4 +1,9 @@
-import { faCloud, faFire, faEnvelope, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCloud,
+  faFire,
+  faEnvelope,
+  faDatabase,
+} from '@fortawesome/free-solid-svg-icons';
 
 import {
   faHtml5,
@@ -128,15 +133,11 @@ export const extras = [
 
 export const aboutMe = {
   name: 'André Lizarán',
-  description: `Adipisicing deserunt nisi et non non. 
-  Reprehenderit cupidatat excepteur reprehenderit est 
-  nisi ea cupidatat ut anim. Aliquip dolore laborum 
-  consectetur minim sit adipisicing reprehenderit ipsum 
-  sint nostrud mollit. Adipisicing deserunt nisi et non non. 
-  Reprehenderit cupidatat excepteur reprehenderit est 
-  nisi ea cupidatat ut anim. Aliquip dolore laborum 
-  consectetur minim sit adipisicing reprehenderit ipsum 
-  sint nostrud mollit.`,
+  description: `
+  Hi my name is André Lizarán, I'm frontend developer and 21 years old. 
+  I love developing simple, and useful interfaces. 
+  Mainly I've been working with Typescript and Javascript. I´m from 
+  Veracruz, México.`,
 };
 
 export const contacts = [
@@ -154,24 +155,42 @@ export const contacts = [
 
 export const experiences = [
   {
-    title: 'Academio',
-    description: 'Aliqua reprehenderit eiusmod enim qui ullamco laboris laborum.',
-    initialDate: 'February 2021',
-    finishDate: 'November 2021',
+    title: 'RayPal',
+    description: 'React Native developer',
+    technologies: [
+      'Firebase',
+      'React Native',
+      'Expo',
+      'React',
+      'Tailwind CSS',
+      'Next CSS',
+      'Axios',
+    ],
+    initialDate: 'November 2021',
+    finishDate: 'Current',
     img: '',
   },
   {
     title: 'Medio Melón',
-    description: 'Aliqua reprehenderit eiusmod enim qui ullamco laboris laborum.',
+    description: 'Frontend developer',
+    technologies: [
+      'React',
+      'React Query',
+      'Angular JS',
+      'JQuery',
+      'Redux',
+      'Material UI',
+    ],
     initialDate: 'November 2021',
     finishDate: 'Current',
     img: '',
   },
   {
-    title: 'RayPal',
-    description: 'Aliqua reprehenderit eiusmod enim qui ullamco laboris laborum.',
-    initialDate: 'November 2021',
-    finishDate: 'Current',
+    title: 'Academio',
+    description: 'Frontend developer',
+    technologies: ['React', 'Redux', 'Firebase', 'Material UI'],
+    initialDate: 'February 2021',
+    finishDate: 'November 2021',
     img: '',
   },
 ];
@@ -187,4 +206,9 @@ export const grades = [
 
 export const languages = ['Spanish (Native)', 'English (Advanced)'];
 
-export const hobbies = ['Videogames', 'Programming', 'Hanging out with friends', 'Music'];
+export const hobbies = [
+  'Videogames',
+  'Programming',
+  'Hanging out with friends',
+  'Music',
+];

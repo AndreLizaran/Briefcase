@@ -3,7 +3,7 @@ import { navButton, whiteButton } from '../classes';
 
 export default function Navbar() {
   return (
-    <nav className='flex justify-between items-center px-6 py-4 text-white w-full fixed top-0 bg-neutral-800'>
+    <nav className='flex justify-between items-center px-6 md:px-20 py-4 text-white w-full fixed top-0 bg-neutral-800'>
       <NavTitle />
       <NavList />
     </nav>
