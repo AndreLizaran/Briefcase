@@ -165,19 +165,18 @@ function Projects() {
         Projects
       </h1>
       <div className='flex flex-col sm:grid grid-cols-2 xl:grid-cols-3 gap-4'>
-        {projects.map(({ icon, title, description }) => (
-          <div
-            className='rounded border-2 border-white flex flex-col bg-netral-800'
-            key={title}
-          >
-            <div className='py-6 flex justify-center'>
-              <FontAwesomeIcon icon={icon} size='3x' className='text-white' />
+        {projects.map(({ icon, title, description }, index: number) => (
+          <Link href={`/${index}`} key={title}>
+            <div className='rounded border-2 border-white flex flex-col bg-neutral-800 cursor-pointer'>
+              <div className='py-6 flex justify-center'>
+                <FontAwesomeIcon icon={icon} size='3x' className='text-white' />
+              </div>
+              <div className='py-4 px-6 bg-white flex flex-col text-center'>
+                <h3 className='font-semibold'>{title}</h3>
+                <small className='text-neutral-800'>{description}</small>
+              </div>
             </div>
-            <div className='py-4 px-6 bg-white flex flex-col text-center'>
-              <h3 className='font-semibold'>{title}</h3>
-              <small className='text-neutral-800'>{description}</small>
-            </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
