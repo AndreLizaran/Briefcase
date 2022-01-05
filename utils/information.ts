@@ -24,6 +24,7 @@ import {
   faPhp,
   faLinkedin,
   faPage4,
+  faBitcoin,
 } from '@fortawesome/free-brands-svg-icons';
 
 export const technologies = [
@@ -260,7 +261,7 @@ export const projects = [
     icon: faBoxes,
   },
   {
-    title: 'Delivery Test',
+    title: 'Libereth Test',
     description:
       'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
     images: [''],
@@ -282,5 +283,13 @@ export const projects = [
     images: [''],
     technologies: ['React Native', 'Axios', 'Firebase'],
     icon: faCar,
+  },
+  {
+    title: 'React Native Crypto',
+    description:
+      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
+    images: [''],
+    technologies: ['React Native'],
+    icon: faBitcoin,
   },
 ];

@@ -1,9 +1,6 @@
 // Modules
 import { useRouter } from 'next/router';
 
-// Classes
-import { sectionTitle } from '../classes';
-
 // Components
 import Container from '../components/Container';
 
@@ -20,14 +17,16 @@ export default function Project() {
       <Container>
         <div className='flex flex-col md:grid grid-cols-2 gap-6 md:gap-20'>
           <div>
-            <h1 className={sectionTitle}>{projects[Number(id)].title}</h1>
+            <h1 className='text-xl mb-1 text-gray-300'>
+              {projects[Number(id)].title}
+            </h1>
             <p className='text-white mb-6'>
               Lorem amet reprehenderit tempor do Lorem est elit veniam irure.
               Nostrud nisi consectetur velit proident irure labore duis occaecat
               dolor ullamco ipsum elit. Nisi duis eu amet minim proident duis
               proident commodo anim exercitation ea non exercitation quis.
             </p>
-            <h1 className={`${sectionTitle} mb-3`}>Technologies</h1>
+            <h1 className='text-xl mb-3 text-gray-300'>Technologies</h1>
             <div className='flex flex-wrap gap-4'>
               {projects[Number(id)].technologies.map((tech) => (
                 <div
@@ -40,7 +39,9 @@ export default function Project() {
             </div>
           </div>
           <div>
-            <h1 className={`${sectionTitle} md:text-right mb-3`}>Images</h1>
+            <h1 className='text-xl mb-1 text-gray-300 md:text-right mb-3'>
+              Images
+            </h1>
           </div>
         </div>
       </Container>
