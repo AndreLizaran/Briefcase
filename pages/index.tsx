@@ -164,7 +164,7 @@ function Projects() {
       <h1 className={`${sectionTitle} mb-3`} id='projects-title'>
         Projects
       </h1>
-      <div className='flex flex-col sm:grid grid-cols-2 xl:grid-cols-3 gap-4'>
+      <div className='flex flex-col sm:grid grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4'>
         {projects.map(({ icon, title, description }, index: number) => (
           <Link href={`/${index}`} key={title}>
             <div className='rounded border-2 border-white flex flex-col bg-neutral-800 cursor-pointer'>
