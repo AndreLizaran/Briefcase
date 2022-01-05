@@ -6,11 +6,8 @@ import {
   faVirus,
   faUsers,
   faVoicemail,
-  faBox,
-  faCamera,
-  faBoxes,
-  faCar,
   faHome,
+  faBus,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -23,7 +20,6 @@ import {
   faNodeJs,
   faPhp,
   faLinkedin,
-  faPage4,
   faBitcoin,
 } from '@fortawesome/free-brands-svg-icons';
 
@@ -253,22 +249,6 @@ export const projects = [
     icon: faUsers,
   },
   {
-    title: 'Raypal Test',
-    description:
-      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
-    images: [''],
-    technologies: ['Next JS', 'Tailwind CSS', 'Axios'],
-    icon: faBoxes,
-  },
-  {
-    title: 'Libereth Test',
-    description:
-      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
-    images: [''],
-    technologies: ['Next JS', 'Tailwind CSS', 'Axios'],
-    icon: faBox,
-  },
-  {
     title: 'Blau Web',
     description:
       'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
@@ -282,7 +262,7 @@ export const projects = [
       'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
     images: [''],
     technologies: ['React Native', 'Axios', 'Firebase'],
-    icon: faCar,
+    icon: faBus,
   },
   {
     title: 'React Native Crypto',
