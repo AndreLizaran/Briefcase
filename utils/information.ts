@@ -220,7 +220,7 @@ export const projects = [
   {
     title: 'React Native Crypto',
     description:
-      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
+      'React Crypto is an app that offers you information about the currency of some cryptocoins, its value compared to dollar, past value and its icon. You can create users to save your favorite coins.',
     images: [
       '/projects/react-crypto/img1.png',
       '/projects/react-crypto/img2.png',
@@ -229,7 +229,7 @@ export const projects = [
       '/projects/react-crypto/img5.png',
       '/projects/react-crypto/img6.png',
     ],
-    technologies: ['React Native', 'Axios', 'Firebase'],
+    technologies: ['React Native', 'Typescript', 'Firebase', 'Axios'],
     icon: faBitcoin,
     links: {
       repository: 'https://github.com/Vulni/React-Crypto',
