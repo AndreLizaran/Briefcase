@@ -5,9 +5,6 @@ import {
   faDatabase,
   faVirus,
   faUsers,
-  faVoicemail,
-  faHome,
-  faBus,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -221,34 +218,21 @@ export const hobbies = [
 
 export const projects = [
   {
-    title: 'Pandemia Tips',
-    description:
-      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
-    images: [''],
-    technologies: [
-      'React',
-      'Tailwind CSS',
-      'Axios',
-      'Node JS',
-      'Express JS',
-      'JWT',
-    ],
-    icon: faVirus,
-  },
-  {
-    title: 'CIS Platform',
-    description:
-      'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
-    images: [''],
-    technologies: ['Next JS', 'Tailwind CSS', 'Axios'],
-    icon: faUsers,
-  },
-  {
     title: 'React Native Crypto',
     description:
       'Eiusmod amet deserunt excepteur consequat eu reprehenderit aliqua do non et ullamco amet ipsum eiusmod.',
-    images: [''],
-    technologies: ['React Native'],
+    images: [
+      '/projects/react-crypto/img1.png',
+      '/projects/react-crypto/img2.png',
+      '/projects/react-crypto/img3.png',
+      '/projects/react-crypto/img4.png',
+      '/projects/react-crypto/img5.png',
+      '/projects/react-crypto/img6.png',
+    ],
+    technologies: ['React Native', 'Axios', 'Firebase'],
     icon: faBitcoin,
+    links: {
+      repository: 'https://github.com/Vulni/React-Crypto',
+    },
   },
 ];

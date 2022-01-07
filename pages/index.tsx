@@ -36,11 +36,12 @@ export default function index() {
         <Technologies />
       </div>
       <Extras />
+      <Projects />
       <Experience />
       <ContactMe />
       <div className='flex w-full justify-center'>
         <button
-          className='px-6 py-4 mt-10 rounded-2xl bg-gray-700 hover:bg-gray-600 text-white'
+          className='px-6 py-4 mt-10 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white'
           onClick={() => window.scrollTo({ behavior: 'smooth', top: 0 })}
         >
           <FontAwesomeIcon icon={faArrowUp} />
@@ -129,7 +130,7 @@ function Technologies() {
       <div className='grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4'>
         {technologies.map(({ title, icon, url }) => (
           <Link key={title} href={url}>
-            <div className='rounded text-white flex flex-col bg-gray-700 hover:bg-gray-600 items-center py-4 px-6 cursor-pointer justify-center'>
+            <div className='rounded text-white flex flex-col bg-blue-600 hover:bg-blue-500 items-center py-4 px-6 cursor-pointer justify-center'>
               <FontAwesomeIcon icon={icon} className='text-5xl mb-1' />
               <h3 className='font-semibold text-md text-center'>{title}</h3>
             </div>

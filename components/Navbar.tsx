@@ -37,7 +37,11 @@ function NavList() {
     <div className='flex gap-6 items-center'>
       <ul className='hidden md:flex text-md font-semibold gap-6'>
         {navSections.map((section) => (
-          <a className={navButton} key={section.title} href={section.to}>
+          <a
+            className='px-4 py-2 rounded text-white font-semibold hover:bg-blue-600'
+            key={section.title}
+            href={section.to}
+          >
             {section.title}
           </a>
         ))}
