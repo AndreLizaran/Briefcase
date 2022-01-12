@@ -73,6 +73,16 @@ export const technologies = [
     url: 'https://nextjs.org/',
   },
   {
+    title: 'Redux',
+    icon: faReact,
+    url: 'https://redux.js.org/',
+  },
+  {
+    title: 'React Query',
+    icon: faReact,
+    url: 'https://react-query.tanstack.com/',
+  },
+  {
     title: 'Node JS',
     icon: faNodeJs,
     url: 'https://nodejs.org/en/',
@@ -106,10 +116,6 @@ export const technologies = [
 
 export const extras = [
   {
-    title: 'Redux',
-    url: 'https://redux.js.org/',
-  },
-  {
     title: 'Angular / Angular JS',
     url: 'https://angular.io/',
   },
@@ -120,6 +126,10 @@ export const extras = [
   {
     title: 'Mongoose',
     url: 'https://mongoosejs.com/',
+  },
+  {
+    title: 'GSAP',
+    url: 'https://greensock.com/gsap/',
   },
   {
     title: 'JWT',

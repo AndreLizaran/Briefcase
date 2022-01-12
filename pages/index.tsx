@@ -41,7 +41,7 @@ export default function index() {
       <ContactMe />
       <div className='flex w-full justify-center'>
         <button
-          className='px-6 py-4 mt-10 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white'
+          className='px-6 py-4 mt-10 rounded-2xl border-2 border-white hover:bg-white hover:text-neutral-800 text-white'
           onClick={() => window.scrollTo({ behavior: 'smooth', top: 0 })}
         >
           <FontAwesomeIcon icon={faArrowUp} />
@@ -108,10 +108,14 @@ function Schooling() {
 function CV() {
   return (
     <section>
-      <h1 className='text-xl mb-1 text-gray-300'>CV</h1>
+      <h1 className='text-xl mb-2 text-gray-300'>CV</h1>
       <div className='flex gap-4'>
         <Link href='/cv/CV2.pdf'>
-          <button className={borderWhiteButton}>View</button>
+          <button
+            className={`${borderWhiteButton} hover:bg-white hover:text-gray-800`}
+          >
+            View
+          </button>
         </Link>
       </div>
     </section>
@@ -130,7 +134,7 @@ function Technologies() {
       <div className='grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4'>
         {technologies.map(({ title, icon, url }) => (
           <Link key={title} href={url}>
-            <div className='rounded text-white flex flex-col bg-blue-600 hover:bg-blue-500 items-center py-4 px-6 cursor-pointer justify-center'>
+            <div className='rounded flex flex-col bg-white hover:bg-gray-200 text-neutral-800 items-center py-4 px-6 cursor-pointer justify-center'>
               <FontAwesomeIcon icon={icon} className='text-5xl mb-1' />
               <h3 className='font-semibold text-md text-center'>{title}</h3>
             </div>
