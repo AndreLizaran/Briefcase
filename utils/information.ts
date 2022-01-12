@@ -5,6 +5,7 @@ import {
   faDatabase,
   faVirus,
   faUsers,
+  faWindowMaximize,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -233,6 +234,69 @@ export const projects = [
     icon: faBitcoin,
     links: {
       repository: 'https://github.com/Vulni/React-Crypto',
+    },
+  },
+  {
+    title: 'Pandemia Tips',
+    description:
+      'Pandemia Tips is an app that gives you information about the pandemic in Veracruz, and how different places take different measures to continue operating.',
+    images: [
+      '/projects/pand-tips/img1.png',
+      '/projects/pand-tips/img2.png',
+      '/projects/pand-tips/img3.png',
+      '/projects/pand-tips/img4.png',
+      '/projects/pand-tips/img5.png',
+      '/projects/pand-tips/img6.png',
+    ],
+    technologies: [
+      'React',
+      'Typescript',
+      'Tailwind CSS',
+      'Axios',
+      'Node JS',
+      'Express JS',
+      'JWT',
+    ],
+    icon: faVirus,
+    links: {
+      repository: 'https://github.com/Vulni/Pandemia-Tips-Frontend',
+      repositoryB: 'https://github.com/Vulni/Pandemia-Tips-Backend',
+    },
+  },
+  {
+    title: 'CIS Dashboard',
+    description:
+      'Veniam officia duis tempor dolor quis cupidatat commodo do amet esse eiusmod nulla nostrud mollit. Commodo mollit esse excepteur sunt. Ipsum reprehenderit sunt labore ullamco voluptate occaecat qui irure ut.',
+    images: [''],
+    technologies: [
+      'React',
+      'Typescript',
+      'Tailwind CSS',
+      'Axios',
+      'React Query',
+      'GSAP',
+    ],
+    icon: faWindowMaximize,
+    links: {
+      repository: 'https://github.com/Vulni/Pandemia-Tips-Frontend',
+    },
+  },
+  {
+    title: 'CIS Platform',
+    description:
+      'Veniam officia duis tempor dolor quis cupidatat commodo do amet esse eiusmod nulla nostrud mollit. Commodo mollit esse excepteur sunt. Ipsum reprehenderit sunt labore ullamco voluptate occaecat qui irure ut.',
+    images: [''],
+    technologies: [
+      'Next JS',
+      'Typescript',
+      'Tailwind CSS',
+      'Axios',
+      'React Query',
+      'GSAP',
+    ],
+    icon: faUsers,
+    links: {
+      repository: 'https://github.com/Vulni/Pandemia-Tips-Frontend',
     },
   },
 ];

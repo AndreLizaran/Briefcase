@@ -167,8 +167,8 @@ function Projects() {
       <div className='flex flex-col sm:grid grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4'>
         {projects.map(({ icon, title, description }, index: number) => (
           <Link href={`/${index}`} key={title}>
-            <div className='rounded border-2 border-white flex flex-col bg-neutral-800 cursor-pointer'>
-              <div className='py-6 flex justify-center'>
+            <div className='rounded border-2 border-white flex flex-col sm:grid sm:grid-rows-2 bg-neutral-800 cursor-pointer'>
+              <div className='py-6 flex justify-center sm:items-center'>
                 <FontAwesomeIcon icon={icon} size='3x' className='text-white' />
               </div>
               <div className='py-4 px-6 bg-white flex flex-col text-center'>
