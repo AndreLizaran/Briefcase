@@ -251,12 +251,10 @@ export const projects = [
     description:
       'Pandemia Tips is an app that gives you information about the pandemic in Veracruz, and how different places take different measures to continue operating.',
     images: [
-      '/projects/pand-tips/img1.png',
-      '/projects/pand-tips/img2.png',
-      '/projects/pand-tips/img3.png',
-      '/projects/pand-tips/img4.png',
-      '/projects/pand-tips/img5.png',
-      '/projects/pand-tips/img6.png',
+      '/projects/pand-tips/img-1.png',
+      '/projects/pand-tips/img-2.png',
+      '/projects/pand-tips/img-3.png',
+      '/projects/pand-tips/img-4.png',
     ],
     technologies: [
       'React',

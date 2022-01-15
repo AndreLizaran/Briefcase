@@ -46,11 +46,20 @@ export default function Project() {
                 ))}
               </div>
               <h1 className='text-xl mb-3 text-gray-300'>Links</h1>
-              {links.repository && (
-                <Link href={links.repository}>
-                  <button className={borderWhiteButton}>Repository</button>
-                </Link>
-              )}
+              <div className='flex gap-4'>
+                {links.repository && (
+                  <Link href={links.repository}>
+                    <button className={borderWhiteButton}>Repository</button>
+                  </Link>
+                )}
+                {links.repositoryB && (
+                  <Link href={links.repositoryB}>
+                    <button className={borderWhiteButton}>
+                      Repository backend
+                    </button>
+                  </Link>
+                )}
+              </div>
             </div>
             <div className='flex flex-col'>
               <h1 className='text-xl mb-1 text-gray-300 lg:text-right mb-3'>
