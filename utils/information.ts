@@ -148,10 +148,10 @@ export const extras = [
 export const aboutMe = {
   name: 'André Lizarán',
   description: `
-  Hi my name is André Lizarán, I'm frontend developer and I'm 21 years old. 
-  I love developing simple, and useful interfaces. 
-  Mainly I've been working with Typescript and Javascript. I'm from 
-  Veracruz, México.`,
+  Hi, I'm Andre Lizaran and I'm frontend developer 
+  (fullstack developer in process). I love making clean
+  and useful apps/interfaces. My favorite programming 
+  language is Typescript. I'm from Veracruz, Mexico.`,
 };
 
 export const contacts = [
