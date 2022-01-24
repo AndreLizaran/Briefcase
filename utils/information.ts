@@ -6,6 +6,7 @@ import {
   faVirus,
   faUsers,
   faWindowMaximize,
+  faMobileAlt,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -305,6 +306,41 @@ export const projects = [
     icon: faUsers,
     links: {
       repository: 'https://github.com/Vulni/Pandemia-Tips-Frontend',
+    },
+  },
+  {
+    title: 'CIS Platform',
+    description:
+      'Veniam officia duis tempor dolor quis cupidatat commodo do amet esse eiusmod nulla nostrud mollit. Commodo mollit esse excepteur sunt. Ipsum reprehenderit sunt labore ullamco voluptate occaecat qui irure ut.',
+    images: [''],
+    technologies: [
+      'Next JS',
+      'Typescript',
+      'Tailwind CSS',
+      'Axios',
+      'React Query',
+      'GSAP',
+    ],
+    icon: faUsers,
+    links: {
+      repository: 'https://github.com/Vulni/Pandemia-Tips-Frontend',
+    },
+  },
+  {
+    title: 'CIS Mobile',
+    description:
+      'Veniam officia duis tempor dolor quis cupidatat commodo do amet esse eiusmod nulla nostrud mollit. Commodo mollit esse excepteur sunt. Ipsum reprehenderit sunt labore ullamco voluptate occaecat qui irure ut.',
+    images: [
+      '/projects/cis-mobile/img-1.png',
+      '/projects/cis-mobile/img-2.png',
+      '/projects/cis-mobile/img-3.png',
+      '/projects/cis-mobile/img-4.png',
+      '/projects/cis-mobile/img-5.png',
+    ],
+    technologies: ['React', 'Typescript', 'Axios', 'React Query'],
+    icon: faMobileAlt,
+    links: {
+      repository: 'https://github.com/AndreLizaran/Cis-Mobile',
     },
   },
 ];
