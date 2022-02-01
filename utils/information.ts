@@ -319,8 +319,9 @@ export const projects = [
       '/projects/cis-mobile/img-3.png',
       '/projects/cis-mobile/img-4.png',
       '/projects/cis-mobile/img-5.png',
+      '/projects/cis-mobile/img-6.png',
     ],
-    technologies: ['React', 'Typescript', 'Axios', 'React Query'],
+    technologies: ['React Native', 'Typescript', 'Axios', 'React Query'],
     icon: faMobileAlt,
     links: {
       repository: 'https://github.com/AndreLizaran/Cis-Mobile',
