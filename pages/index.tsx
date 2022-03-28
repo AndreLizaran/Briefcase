@@ -135,7 +135,7 @@ function Technologies() {
         {technologies.map(({ title, icon, url }) => (
           <Link key={title} href={url}>
             <div className='rounded flex flex-col bg-white hover:bg-gray-200 text-neutral-800 items-center py-4 px-6 cursor-pointer justify-center'>
-              <FontAwesomeIcon icon={icon} className='text-5xl mb-1' />
+              <FontAwesomeIcon icon={icon} className='mb-1' size='3x'/>
               <h3 className='font-semibold text-md text-center'>{title}</h3>
             </div>
           </Link>

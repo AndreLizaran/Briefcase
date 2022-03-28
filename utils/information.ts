@@ -7,6 +7,7 @@ import {
   faUsers,
   faWindowMaximize,
   faMobileAlt,
+  IconDefinition,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -20,6 +21,7 @@ import {
   faPhp,
   faLinkedin,
   faBitcoin,
+  faAngular,
 } from '@fortawesome/free-brands-svg-icons';
 
 export const technologies = [
@@ -84,6 +86,16 @@ export const technologies = [
     url: 'https://react-query.tanstack.com/',
   },
   {
+    title: 'Material UI',
+    icon: faReact,
+    url: 'https://mui.com/',
+  },
+  {
+    title: 'Angular',
+    icon: faAngular,
+    url: 'https://angular.io/',
+  },
+  {
     title: 'Node JS',
     icon: faNodeJs,
     url: 'https://nodejs.org/en/',
@@ -103,22 +115,13 @@ export const technologies = [
     icon: faDatabase,
     url: 'https://www.postgresql.org/',
   },
-  {
-    title: 'PHP',
-    icon: faPhp,
-    url: 'https://www.php.net/',
-  },
-  {
-    title: 'Symfony',
-    icon: faPhp,
-    url: 'https://symfony.com/',
-  },
+  
 ];
 
 export const extras = [
   {
-    title: 'Angular / Angular JS',
-    url: 'https://angular.io/',
+    title: 'Axios',
+    url: 'https://axios-http.com/docs/intro',
   },
   {
     title: 'Express JS',
@@ -229,7 +232,7 @@ export const hobbies = [
   'Music',
 ];
 
-export const projects = [
+export const projects:Project[] = [
   {
     title: 'React Native Crypto',
     description:
@@ -292,24 +295,6 @@ export const projects = [
     },
   },
   {
-    title: 'CIS Platform',
-    description:
-      'Veniam officia duis tempor dolor quis cupidatat commodo do amet esse eiusmod nulla nostrud mollit. Commodo mollit esse excepteur sunt. Ipsum reprehenderit sunt labore ullamco voluptate occaecat qui irure ut.',
-    images: [''],
-    technologies: [
-      'Next JS',
-      'Typescript',
-      'Tailwind CSS',
-      'Axios',
-      'React Query',
-      'GSAP',
-    ],
-    icon: faUsers,
-    links: {
-      repository: 'https://github.com/Vulni/Pandemia-Tips-Frontend',
-    },
-  },
-  {
     title: 'CIS Mobile',
     description:
       'Veniam officia duis tempor dolor quis cupidatat commodo do amet esse eiusmod nulla nostrud mollit. Commodo mollit esse excepteur sunt. Ipsum reprehenderit sunt labore ullamco voluptate occaecat qui irure ut.',
@@ -327,4 +312,36 @@ export const projects = [
       repository: 'https://github.com/AndreLizaran/Cis-Mobile',
     },
   },
+  {
+    title:'CIS Frontend',
+    description:'Veniam officia duis tempor dolor quis cupidatat commodo do amet esse eiusmod nulla nostrud mollit. Commodo mollit esse excepteur sunt. Ipsum reprehenderit sunt labore ullamco voluptate occaecat qui irure ut.',
+    images: [],
+    technologies: ['React', 'Next JS', 'Tailwind CSS', 'React Query'],
+    icon: faUsers,
+    links: {
+      repository: 'https://github.com/AndreLizaran/Cis-Frontend'
+    }
+  },
+  {
+    title:'React Colors',
+    description:'Veniam officia duis tempor dolor quis cupidatat commodo do amet esse eiusmod nulla nostrud mollit. Commodo mollit esse excepteur sunt. Ipsum reprehenderit sunt labore ullamco voluptate occaecat qui irure ut.',
+    images: [],
+    technologies: ['React', 'React Native', 'React Query', 'Axios'],
+    icon: faUsers,
+    links: {
+      repository: 'https://github.com/AndreLizaran/Cis-Frontend'
+    }
+  }
 ];
+
+type Project = {
+  title:string;
+  description:string;
+  images:string[];
+  technologies:string[];
+  icon:IconDefinition;
+  links: {
+    repository:string;
+    repositoryB?:string;
+  }
+}
