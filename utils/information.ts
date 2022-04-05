@@ -124,7 +124,7 @@ export const extras = [
     url: 'https://axios-http.com/docs/intro',
   },
   {
-    title: 'Express JS',
+    title: 'Express JS', 
     url: 'http://expressjs.com/',
   },
   {
@@ -252,34 +252,9 @@ export const projects:Project[] = [
     },
   },
   {
-    title: 'Pandemia Tips',
-    description:
-      'Pandemia Tips is an app that gives you information about the pandemic in Veracruz, and how different places take different measures to continue operating.',
-    images: [
-      '/projects/pand-tips/img-1.png',
-      '/projects/pand-tips/img-2.png',
-      '/projects/pand-tips/img-3.png',
-      '/projects/pand-tips/img-4.png',
-    ],
-    technologies: [
-      'React',
-      'Typescript',
-      'Tailwind CSS',
-      'Axios',
-      'Node JS',
-      'Express JS',
-      'JWT',
-    ],
-    icon: faVirus,
-    links: {
-      repository: 'https://github.com/Vulni/Pandemia-Tips-Frontend',
-      repositoryB: 'https://github.com/Vulni/Pandemia-Tips-Backend',
-    },
-  },
-  {
     title: 'CIS Dashboard',
     description:
-      'Veniam officia duis tempor dolor quis cupidatat commodo do amet esse eiusmod nulla nostrud mollit. Commodo mollit esse excepteur sunt. Ipsum reprehenderit sunt labore ullamco voluptate occaecat qui irure ut.',
+      'Application to manage the information displayed on the Systems Engineers Community platform',
     images: [''],
     technologies: [
       'React',
@@ -297,7 +272,7 @@ export const projects:Project[] = [
   {
     title: 'CIS Mobile',
     description:
-      'Veniam officia duis tempor dolor quis cupidatat commodo do amet esse eiusmod nulla nostrud mollit. Commodo mollit esse excepteur sunt. Ipsum reprehenderit sunt labore ullamco voluptate occaecat qui irure ut.',
+      'Mobile application to consult the information provided by the Systems Engineers Community',
     images: [
       '/projects/cis-mobile/img-1.png',
       '/projects/cis-mobile/img-2.png',
@@ -314,7 +289,7 @@ export const projects:Project[] = [
   },
   {
     title:'CIS Frontend',
-    description:'Veniam officia duis tempor dolor quis cupidatat commodo do amet esse eiusmod nulla nostrud mollit. Commodo mollit esse excepteur sunt. Ipsum reprehenderit sunt labore ullamco voluptate occaecat qui irure ut.',
+    description:'Web application to consult the information provided by the Systems Engineers Community',
     images: [],
     technologies: ['React', 'Next JS', 'Tailwind CSS', 'React Query'],
     icon: faUsers,
@@ -324,7 +299,7 @@ export const projects:Project[] = [
   },
   {
     title:'React Colors',
-    description:'Veniam officia duis tempor dolor quis cupidatat commodo do amet esse eiusmod nulla nostrud mollit. Commodo mollit esse excepteur sunt. Ipsum reprehenderit sunt labore ullamco voluptate occaecat qui irure ut.',
+    description:'Mobile app to get colors and make color palettes',
     images: [],
     technologies: ['React', 'React Native', 'React Query', 'Axios'],
     icon: faUsers,
